@@ -57,7 +57,7 @@
     "variables": {
         "appInsightsName": "[concat(parameters('siteName'), 'AppInsights')]",
         "hostingPlanName": "[concat(parameters('siteName'), 'ServicePlan')]", 
-        "storageAccountName": "[concat(parameters('siteName'), 'AF')]",
+        "storageAccountName": "[concat(parameters('siteName'), 'storage')]",
         "storageAccountid": "[concat(resourceGroup().id,'/providers/','Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]",
         "functionWorkerRuntime": "[parameters('runtime')]"
     },
