@@ -1,0 +1,26 @@
+{
+    "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json",
+    "contentVersion": "1.0.0.0",
+    "parameters": {},
+    "variables": {},
+    "resources": [
+        {
+            "apiVersion": "2017-05-10",
+            "name": "azurefunction",
+            "type": "Microsoft.Resources/deployments",
+            "dependsOn": [
+            ],
+            "properties": {
+                "mode": "Incremental",
+                "templateLink": {
+                    "uri": "https://raw.githubusercontent.com/testingVerhaegheO/azurefunction/master/azurefunction.json",
+                    "contentVersion": "1.0.0.0"
+                },
+                "parametersLink": {
+                    "uri": "https://raw.githubusercontent.com/testingVerhaegheO/azurefunction/master/azurefunction.parameters.json",
+                    "contentVersion": "1.0.0.0"
+                }
+            }
+        }
+    ]
+}
